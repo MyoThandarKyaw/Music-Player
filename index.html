@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Music App</title>
+   <!-- FontAwesome -->
+   <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.min.css">
+   <!-- CSS -->
+   <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+   <div class="container">
+      <div class="music">
+        <audio id="music-player"></audio>
+        <div class="img-container">
+         <img src="./images/m10.jpg" alt="" id="song-image">
+        </div>
+         <div class="song-details">
+            <h2 id="song-title">I Know I Love You <span>ft. Seori</span></h2>
+            <h3 id="song-artist">TXT</h3>
+         </div>
+         <div class="button-container">
+            <button class="back-btn" id="prev-btn">
+               <i class="fa-solid fa-backward fa-lg back"></i>
+            </button>
+            <button class="play-btn" id="play-btn">
+               <i class="fa-solid fa-play fa-2x" id="play-icon"></i>
+            </button>
+            <button class="back-btn" id="next-btn">
+               <i class="fa-solid fa-forward fa-lg"></i>
+            </button>
+         </div>
+         <div class="next-up">
+            <span>Next Up</span>
+            <p id="song-next-up"> My You Jung Kook</p> 
+         </div>
+      </div>
+   </div>
+</body>
+<script src="./main.js"></script>
+
+</html>

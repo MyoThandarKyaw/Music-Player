@@ -1,0 +1,124 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Arial", sans-serif;
+}
+
+body {
+   background-color: #fff;
+}
+
+.container {
+   max-width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+}
+
+.music {
+   background-color: #FFFFFF;
+   padding: 60px 50px;
+   width: 414px;
+   max-width: 100%;
+   border-radius: 16px;
+   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.music .img-container {
+   position: relative;
+   display: block;
+   margin: 0 auto;
+   width: 200px;
+   margin-bottom: 20px;
+}
+
+.img-container img {
+   width: 200px;
+   border-radius: 50%;
+   box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.3);
+   animation: rotate 3s linear infinite;
+   animation-play-state: paused;
+}
+
+.music.play .img-container img {
+   animation-play-state: running;
+}
+@keyframes rotate {
+   from {
+      transform: rotate(0deg);
+   }
+
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+.song-details {
+   text-align: center;
+}
+
+.song-details h2 {
+   font-size: 1.7rem;
+   font-weight: 400;
+   margin-bottom: 20px;
+}
+
+.song-details h3 {
+   font-weight: 500;
+   font-size: 25px;
+   opacity: .8;
+}
+
+.button-container {
+   text-align: center;
+   margin: 20px;
+   cursor: pointer;
+}
+
+.button-container .back-btn {
+   border: none;
+   outline: none;
+   appearance: none;
+   background: none;
+   cursor: pointer;
+}
+.button-container .play-btn {
+   color: white;
+   background-color: crimson;
+   padding: 14px;
+   border-radius: 50%;
+   border: 2px solid rgb(36, 35, 35);
+   transition: .5s;
+   width: 80px;
+   height: 80px;
+   cursor: pointer;
+}
+.button-container .back-btn i {
+   font-size: 1.5rem;
+   color: rgb(112, 112, 112);
+   margin: 20px;
+}
+
+.next-up {
+   font-size: 1.2rem;
+   text-align: center;
+   margin-top: 2rem;
+}
+.next-up span{
+   color: rgb(112, 112, 112);
+}
+.next-up p{
+   font-style: italic;
+   color: rgb(51, 51, 51);
+   margin-top: 10px;
+}
+
+@media (max-width:425px) {
+   .music {
+      min-height: 100vh;
+      border-radius: 0px;
+      padding: 75px 30px;
+   }
+}
